@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "8355c04a-17a9-4021-865b-5b5032071886",
+		"name": "API cheapshark",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17502656"
+	},
+	"item": [
+		{
+			"name": "Get games by title",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "apitoken",
+						"value": "ac2EYfyuQXIQdLmH3PlTxIZpxYWykXMuw6ZniKl2y19xRrvYC5o0bjPsXN2yCXlm",
+						"description": "token ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.cheapshark.com/api/1.0/games?title=batman",
+					"protocol": "https",
+					"host": [
+						"www",
+						"cheapshark",
+						"com"
+					],
+					"path": [
+						"api",
+						"1.0",
+						"games"
+					],
+					"query": [
+						{
+							"key": "apitoken",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "batman"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get game by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.cheapshark.com/api/1.0/games?id=456",
+					"protocol": "https",
+					"host": [
+						"www",
+						"cheapshark",
+						"com"
+					],
+					"path": [
+						"api",
+						"1.0",
+						"games"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get deals by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.cheapshark.com/api/1.0/deals&id=sz546Tl6B1DiwBR5j9oG50afCXd9qJ4x2nxDWDESmSI%3D",
+					"protocol": "https",
+					"host": [
+						"www",
+						"cheapshark",
+						"com"
+					],
+					"path": [
+						"api",
+						"1.0",
+						"deals&id=sz546Tl6B1DiwBR5j9oG50afCXd9qJ4x2nxDWDESmSI%3D"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all deal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.cheapshark.com/api/1.0/deals",
+					"protocol": "https",
+					"host": [
+						"www",
+						"cheapshark",
+						"com"
+					],
+					"path": [
+						"api",
+						"1.0",
+						"deals"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "ac2EYfyuQXIQdLmH3PlTxIZpxYWykXMuw6ZniKl2y19xRrvYC5o0bjPsXN2yCXlm",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
